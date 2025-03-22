@@ -1,18 +1,23 @@
 export const studies = [
   {
-    title: "Técnico en desarrollo de software",
-    corporation: "SENA - Montería (Córdoba) ",
-    date: "02/2019 – 12/2019",
+    title: "Brevet de technicien supérieur en Gestion des systèmes d'information",
+    corporation: "Institut Supérieur de Technologie Appliquée et de Gestion",
+    date: "2019 – 2021",
   },
   {
-    title: "Desarrollador Front-end React Js",
-    corporation: "Alura Latam - Remoto",
-    date: "04/2023 – 09/2023",
+    title: "Licence en science de l'ingénieur option informatique",
+    corporation: "Université Protestante d'Afrique Centrale",
+    date: "2021 - 2022",
   },
   {
-    title: "Curso profesional de React Js",
-    corporation: "Código facilito - Remoto",
-    date: "04/2023 – 04/2023",
+    title: "Master en science de l'ingénieur option informatique",
+    corporation: "Université Protestante d'Afrique Centrale",
+    date: "2022-2024",
+  },
+  {
+    title: "Cycle ingénieur option développement logiciel",
+    corporation: "ISEN méditerranée",
+    date: "2024 - aujourd'hui",
   },
 ];
 
@@ -39,6 +44,8 @@ export const IconKeys = {
   mongodb: "mongodb",
   vite: "vite",
   firebase: "firebase",
+  Laravel: "Laravel",
+  Java: "Java",
   // here add more icon keys
 };
 
@@ -131,15 +138,26 @@ export const skills = [
     title: "Firebase",
     icon: IconKeys.firebase,
   },
+  {
+    title: "Laravel",
+    icon: IconKeys.Laravel,
+  },
+  {
+    title: "Java",
+    icon: IconKeys.Java,
+  },
 ];
 
 export const projects = [
   {
     img: "../../../img/shopcart.png",
     title: "Site de e-commerce",
-    link: "https://ecommerce-stripe-763m.vercel.app/",
+    link: "https://gitlab.com/LarryJasonTueno/shopcart.git",
     description: `Site de e-commerce développé dans le cadre d'un stage effectué à LaMater Tech`,
     technologies: [
+      {
+        icon: IconKeys.html
+      },
       {
         icon: IconKeys.javaScript,
       },
@@ -150,19 +168,19 @@ export const projects = [
         icon: IconKeys.tailwind,
       },
       {
-        icon: IconKeys.mongodb,
-      },
-      {
-        icon: IconKeys.stripe,
+        icon: IconKeys.firebase,
       },
     ],
   },
   {
     img: "../../../img/farm-advisor.png",
     title: "Farm Advisor",
-    link: "https://nexanime.vercel.app",
+    link: "https://gitlab.com/LarryJasonTueno/form-advisor.git",
     description: `Application d'aide à la sélection des cultures en fonction des conditions du sol et de la météo`,
     technologies: [
+      {
+        icon:IconKeys.html
+      },
       {
         icon: IconKeys.javaScript,
       },
@@ -173,54 +191,31 @@ export const projects = [
         icon: IconKeys.tailwind,
       },
       {
-        icon: IconKeys.firebase,
+        icon: IconKeys.nodejs,
       },
     ],
   },
-  // {
-  //   img: "../../../img/cyberpunk.webp",
-  //   title: "cyberpunk",
-  //   link: "https://preeminent-liger-266356.netlify.app/",
-  //   description: `este proyecto se trata de un clon de la pagína de cyberpunk , donde
-  //     el ususario puede ver los tailer de él juegos y también los
-  //     episodios de la serie....`,
-  //   technologies: [
-  //     {
-  //       icon: IconKeys.html,
-  //     },
-  //     {
-  //       icon: IconKeys.css,
-  //     },
-  //     {
-  //       icon: IconKeys.javaScript,
-  //     },
-  //   ],
-  // },
-  // {
-  //   img: "../../../img/store-games.webp",
-  //   title: "Store games",
-  //   link: "https://store-games-site.netlify.app/",
-  //   description: `Simulando una página de juegos , consumiendo la API de rawg api
-  //     donde los usuarios pueden buscar videojuegos, ver sus detalles como
-  //     creadores , calificaciones,tiendas donde comprar.....`,
-  //   technologies: [
-  //     {
-  //       icon: IconKeys.react,
-  //     },
-  //     {
-  //       icon: IconKeys.css,
-  //     },
-  //     {
-  //       icon: IconKeys.javaScript,
-  //     },
-  //     {
-  //       icon: IconKeys.tailwind,
-  //     },
-  //     {
-  //       icon: IconKeys.reactQuery,
-  //     },
-  //   ],
-  // },
+  {
+     img: "../../../img/compta.png",
+     title: "Application d'aide à la comptabilité",
+     link: "https://preeminent-liger-266356.netlify.app/",
+     description: `Application d'aide à la comptabilité développée dans le cadre d'un stage
+     pour l'entreprise Life is Simple`,
+     technologies: [
+       {
+         icon: IconKeys.html,
+       },
+       {
+         icon: IconKeys.css,
+       },
+       {
+         icon: IconKeys.javaScript,
+       },
+       {
+         icon: IconKeys.Laravel,
+      },
+     ],
+  },
   // {
   //   img: "../../../img/movie.webp",
   //   title: "Movie Tv",
