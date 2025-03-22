@@ -193,6 +193,9 @@ export const projects = [
       {
         icon: IconKeys.nodejs,
       },
+      {
+        icon: IconKeys.zustand,
+      },
     ],
   },
   {
