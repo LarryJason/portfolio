@@ -97,20 +97,12 @@ export const skills = [
     icon: IconKeys.redux,
   },
   {
-    title: "Styled Components",
-    icon: IconKeys.styled,
-  },
-  {
     title: "Node Js",
     icon: IconKeys.nodejs,
   },
   {
     title: "TypeScript",
     icon: IconKeys.typeScript,
-  },
-  {
-    title: "Radix UI",
-    icon: IconKeys.radix,
   },
 
   {
@@ -127,24 +119,12 @@ export const skills = [
   },
 
   {
-    title: "Shadcn UI",
-    icon: IconKeys.shadcn,
-  },
-  {
     title: "Mongo Db",
     icon: IconKeys.mongodb,
   },
   {
     title: "Firebase",
     icon: IconKeys.firebase,
-  },
-  {
-    title: "Laravel",
-    icon: IconKeys.Laravel,
-  },
-  {
-    title: "Java",
-    icon: IconKeys.Java,
   },
 ];
 
