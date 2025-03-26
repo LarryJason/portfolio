@@ -150,7 +150,7 @@ export const skills = [
 
 export const projects = [
   {
-    img: "../../../img/shopcart.png",
+    img: "/home/tueno-larry-jason/Documents/app/Portafolio/public/img/shopcart.png",
     title: "Site de e-commerce",
     link: "https://gitlab.com/LarryJasonTueno/shopcart.git",
     description: `Site de e-commerce développé dans le cadre d'un stage effectué à LaMater Tech`,
@@ -173,9 +173,9 @@ export const projects = [
     ],
   },
   {
-    img: "../../../img/farm-advisor.png",
+    img: "/home/tueno-larry-jason/Documents/app/Portafolio/public/img/farm-advisor.png",
     title: "Farm Advisor",
-    link: "https://gitlab.com/LarryJasonTueno/form-advisor.git",
+    link: "/home/tueno-larry-jason/Documents/app/Portafolio/public/img/farm-advisor.png",
     description: `Application d'aide à la sélection des cultures en fonction des conditions du sol et de la météo`,
     technologies: [
       {
@@ -199,7 +199,7 @@ export const projects = [
     ],
   },
   {
-     img: "../../../img/compta.png",
+     img: "/home/tueno-larry-jason/Documents/app/Portafolio/public/img/compta.png",
      title: "Application d'aide à la comptabilité",
      link: "https://preeminent-liger-266356.netlify.app/",
      description: `Application d'aide à la comptabilité développée dans le cadre d'un stage

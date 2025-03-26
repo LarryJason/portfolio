@@ -4,15 +4,442 @@ import Studies from "./studies/Studies.astro";
 import About from "./about/About.astro";
 import Skills from "./skills/Skills.astro";
 import Home from "./home/Home.astro";
+import ecom from "../../../public/img/shopcart.png";
+import farm from "../../../public/img/farm-advisor.png";
+import compta from "../../../public/img/compta.png"
+import chat from "../../../public/img/chat.png";
+import { Image } from "astro:assets";
+import react from "../../../public/icons/icons8-suivantjs-48.png";
+import tailwind from "../../../public/icons/icons8-vent-arrièrecss-48.png";
+import node from "../../../public/icons/icons8-nodejs-48.png";
+import lab from "../../../public/icons/icons8-gitlab-48.png";
+import html from "../../../public/icons/icons8-html-48.png";
+import vercel from "../../../public/icons/vercel.png";
+import next from "../../../public/icons/icons8-réagir-40.png";
+import firebase from "../../../public/icons/icons8-firebase-48.png";
+import angular from "../../../public/icons/icons8-angularjs-48.png";
+import css from "../../../public/icons/icons8-css3-48.png";
+import laravel from "../../../public/icons/icons8-laravel-64.png";
+import sql from "../../../public/icons/icons8-sql-48.png";
+import hub from "../../../public/icons/icons8-github-50.png";
 
+
+type Technology = {
+  icon?: string;
+};
+
+export interface Props {
+  title: string;
+  img: string;
+  description: string;
+  technologies?: Technology[];
+  link: string;
+}
 ---
 
 <main>
   <div class="container_p">
     <Home />
-    <Projects />
-    <Skills />
-    <Studies />
-    <About />
+    <!-- <Projects /> -->
+    <section class="section-projects">
+      <div class="linear-grandient-1"></div>
+      <div class="container-projects">
+        <h2 class="title-projects" id="proyectos">Projets</h2>
+        <div>
+          <ul class="ul-projects">
+            <li class="li-project">
+              <Image src={ecom} alt="Site de e-commerce" loading="lazy" />
+              <p class="title-project">Site de e-commerce</p>
+              <p class="description-project">
+                Site de e-commerce développé dans le cadre d'un stage effectué à
+                LaMater Tech
+              </p>
+              <p class="title-technologies">Technologies utilisées</p>
+              <div class="container-technologies">
+                <Image
+                  class="icon-technologies"
+                  src={html}
+                  alt="react.js"
+                  loading="lazy"
+                />
+                <Image
+                  class="icon-technologies"
+                  src={react}
+                  alt="react.js"
+                  loading="lazy"
+                />
+                <Image
+                  class="icon-technologies"
+                  src={tailwind}
+                  alt="react.js"
+                  loading="lazy"
+                />
+                <Image
+                  class="icon-technologies"
+                  src={node}
+                  alt="react.js"
+                  loading="lazy"
+                />
+                <Image
+                  class="icon-technologies"
+                  src={lab}
+                  alt="react.js"
+                  loading="lazy"
+                />
+                <Image
+                  class="icon-technologies"
+                  src={vercel}
+                  alt="react.js"
+                  loading="lazy"
+                />
+              </div>
+              <div class="container-link-project">
+                <a
+                  href="https://gitlab.com/LarryJasonTueno/shopcart.git"
+                  target="_blank">Voir plus</a
+                >
+              </div>
+            </li>
+            <li class="li-project">
+              <Image src={farm} alt="Site de e-commerce" loading="lazy" />
+              <p class="title-project">Farm Advisor</p>
+              <p class="description-project">
+                Application d'aide à la sélection des cultures en fonction des
+                conditions du sol et de la météo
+              </p>
+              <p class="title-technologies">Technologies utilisées</p>
+              <div class="container-technologies">
+                <Image
+                  class="icon-technologies"
+                  src={html}
+                  alt="react.js"
+                  loading="lazy"
+                />
+                <Image
+                  class="icon-technologies"
+                  src={next}
+                  alt="react.js"
+                  loading="lazy"
+                />
+                <Image
+                  class="icon-technologies"
+                  src={tailwind}
+                  alt="react.js"
+                  loading="lazy"
+                />
+                <Image
+                  class="icon-technologies"
+                  src={firebase}
+                  alt="react.js"
+                  loading="lazy"
+                />
+                <Image
+                  class="icon-technologies"
+                  src={lab}
+                  alt="react.js"
+                  loading="lazy"
+                />
+              </div>
+              <div class="container-link-project">
+                <a
+                  href="https://gitlab.com/LarryJasonTueno/form-advisor.git"
+                  target="_blank">Voir plus</a
+                >
+              </div>
+            </li>
+            <li class="li-project">
+              <Image src={compta} alt="Site de e-commerce" loading="lazy" />
+              <p class="title-project">Application d'aide à la comptabilité</p>
+              <p class="description-project">
+                Application d'aide à la comptabilité développée dans le cadre
+                d'un stage pour l'entreprise Life is Simple
+              </p>
+              <p class="title-technologies">Technologies utilisées</p>
+              <div class="container-technologies">
+                <Image
+                  class="icon-technologies"
+                  src={html}
+                  alt="react.js"
+                  loading="lazy"
+                />
+                <Image
+                  class="icon-technologies"
+                  src={angular}
+                  alt="react.js"
+                  loading="lazy"
+                />
+                <Image
+                  class="icon-technologies"
+                  src={css}
+                  alt="react.js"
+                  loading="lazy"
+                />
+                <Image
+                  class="icon-technologies"
+                  src={laravel}
+                  alt="react.js"
+                  loading="lazy"
+                />
+                <Image
+                  class="icon-technologies"
+                  src={sql}
+                  alt="react.js"
+                  loading="lazy"
+                />
+                <Image
+                  class="icon-technologies"
+                  src={hub}
+                  alt="react.js"
+                  loading="lazy"
+                />
+              </div>
+              <div class="container-link-project">
+                <a
+                  href="https://github.com/LarryJasonTueno/GestionComptaBackEnd.git"
+                  target="_blank">Voir plus</a
+                >
+              </div>
+            </li>
+            <li class="li-project">
+              <Image src={chat} alt="Site de e-commerce" loading="lazy" />
+              <p class="title-project">Application de chat multimedia</p>
+              <p class="description-project">
+                Application de chat multimedia développée dans le cadre d'un
+                projet personnel
+              </p>
+              <p class="title-technologies">Technologies utilisées</p>
+              <div class="container-technologies">
+                <Image
+                  class="icon-technologies"
+                  src={html}
+                  alt="react.js"
+                  loading="lazy"
+                />
+                <Image
+                  class="icon-technologies"
+                  src={next}
+                  alt="react.js"
+                  loading="lazy"
+                />
+                <Image
+                  class="icon-technologies"
+                  src={tailwind}
+                  alt="react.js"
+                  loading="lazy"
+                />
+                <Image
+                  class="icon-technologies"
+                  src={firebase}
+                  alt="react.js"
+                  loading="lazy"
+                />
+                <Image
+                  class="icon-technologies"
+                  src={lab}
+                  alt="react.js"
+                  loading="lazy"
+                />
+              </div>
+              <div class="container-link-project">
+                <a
+                  href="https://gitlab.com/LarryJasonTueno/shopcart.git"
+                  target="_blank">Voir plus</a
+                >
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <Skills />
+      <Studies />
+      <About />
+    </section>
   </div>
 </main>
+
+<style>
+  .container-technologies .icon-technologies {
+    width: 40px;
+    height: 40px;
+  }
+  .linear-grandient-1 {
+    position: absolute;
+    left: 0;
+    top: 1px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(1, 190, 150, 0.5), #000);
+    z-index: 0;
+  }
+
+  .section-projects {
+    position: relative;
+    background-color: #111111;
+    overflow: hidden;
+  }
+
+  .container-projects {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1355px;
+  }
+  .title-projects {
+    position: relative;
+    display: block;
+    font-size: 27px;
+    padding: 20px 0;
+    color: #f6f6f9;
+    width: 100%;
+    font-weight: 800;
+    scroll-margin-top: 80px;
+  }
+  .li-project {
+    position: relative;
+    list-style: none;
+    border: 1px solid #3d3e4f;
+    overflow: hidden;
+    max-width: 380px;
+    min-width: 300px;
+    width: 100%;
+    border-radius: 2px;
+    transition: transform, box-shadow, 0.3s;
+    border-radius: 7px;
+    background-color: #25242d;
+    z-index: 1;
+    min-height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .li-project:nth-child() {
+    min-height: 100%;
+  }
+
+  .li-project::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+    bottom: 0;
+    transition: 0.3s ease-in-out;
+    pointer-events: none;
+  }
+
+  .li-project:hover::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+    bottom: 0;
+    transition: 0.3s ease-in-out;
+    pointer-events: none;
+  }
+  .li-project:hover {
+    transform: translateY(-10px);
+  }
+  .li-project img {
+    position: relative;
+    display: block;
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    object-position: left top;
+    user-select: none;
+    pointer-events: none;
+  }
+  .title-project {
+    color: #f6f6f9;
+    padding: 10px 10px;
+    font-size: 25px;
+    font-weight: 700;
+  }
+  .title-project::first-letter {
+    text-transform: capitalize;
+  }
+
+  .title-technologies {
+    color: #f6f6f9;
+    font-size: 20px;
+    padding: 5px 10px;
+  }
+  .description-project {
+    padding: 0 10px;
+    color: #f6f6f990;
+    font-size: 17px;
+    font-weight: 400;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .description-project::first-letter {
+    text-transform: capitalize;
+  }
+
+  .title-technologies::first-letter {
+    text-transform: capitalize;
+  }
+
+  .container-technologies {
+    position: relative;
+    display: flex;
+    justify-content: start;
+    padding: 10px 10px;
+    column-gap: 20px;
+    flex-wrap: wrap;
+    color: white;
+  }
+  .container-link-project {
+    position: relative;
+    width: 100%;
+    padding: 20px 10px;
+  }
+
+  .container-link-project a {
+    position: relative;
+    text-decoration: none;
+    padding: 10px 10px;
+    background-color: #01be96;
+    border-radius: 5px;
+    color: #f6f6f9;
+    justify-content: space-between;
+  }
+
+  .ul-projects {
+    position: relative;
+    display: grid;
+    place-items: center;
+    padding: 40px 0;
+    width: 100%;
+    height: 100%;
+  }
+  .ul-projects a {
+    text-decoration: none;
+  }
+
+  /* responsive */
+
+  @media (min-width: 300px) {
+    .ul-projects {
+      grid-template-columns: 1fr;
+      gap: 50px;
+    }
+  }
+  @media (min-width: 700px) {
+    .ul-projects {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .ul-projects {
+      grid-template-columns: repeat(3, 1fr);
+      justify-content: space-between;
+    }
+  }
+</style>
